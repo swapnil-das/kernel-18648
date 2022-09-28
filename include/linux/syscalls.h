@@ -354,11 +354,6 @@ asmlinkage long sys_kexec_load(unsigned long entry, unsigned long nr_segments,
 				unsigned long flags);
 
 asmlinkage long sys_exit(int error_code);
-// @harsha -- added a test syscall
-asmlinkage long sys_hello(void);
-asmlinkage long sys_count_rt_threads(unsigned int *);
-asmlinkage long sys_list_rt_threads(struct container *, int);
-asmlinkage long sys_calc(const char *, const char *, char , char*);
 asmlinkage long sys_exit_group(int error_code);
 asmlinkage long sys_wait4(pid_t pid, int __user *stat_addr,
 				int options, struct rusage __user *ru);
